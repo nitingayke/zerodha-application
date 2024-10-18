@@ -1,0 +1,62 @@
+.login-box {
+    width: 20rem;
+}
+
+.login-buttons {
+    border-radius: 3px;
+    box-shadow: 0 0 10px 1px rgb(189, 189, 189);
+    padding: 2rem 1rem;
+}
+
+.login-buttons input {
+    border: 1px solid lightgray;
+}
+
+.login-buttons input:focus {
+    outline: 1px solid rgb(143, 143, 143);
+    border: none;
+}
+
+.login-buttons button {
+    background-color: orangered;
+    border-radius: 0.1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.signup-header {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.user-login-form {
+    border-radius: 0.2rem;
+    box-shadow: 0 0 6px 6px rgba(208, 208, 208, 0.655);
+}
+
+.login-input-box {
+    border: 1px solid rgba(194, 194, 194, 0.543);
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    display: flex;
+}
+
+.login-input-box input {
+    border: none;
+    padding: 0 0.5rem;
+    width: 100%;
+}
+
+.login-input-box input:focus {
+    outline: none;
+}
+
+.alert {
+    color: red !important;
+    text-decoration: underline;
+    padding: 0 !important;
+}
+
+.email {
+    color: blue;
+}

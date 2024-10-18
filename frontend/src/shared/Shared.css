@@ -1,0 +1,60 @@
+.landing-footer{
+    background-color: rgba(211, 211, 211, 0.196);
+}
+.footer-helper-links li{
+    color: gray;
+    padding: 0.2rem 0.5rem;
+}
+.footer-helper-links li:hover{
+    color: blue;
+    cursor: pointer;
+}
+.landing-navbar{
+    background-color: white;
+
+    border-bottom: 0.5px solid rgba(204, 204, 204, 0.489);
+}
+.landing-navbar nav{
+    height: 100%;
+}
+.navbar-redirect-link{
+    padding: 0.5rem 0;
+}
+.navbar-redirect-link a{
+    text-decoration: none;
+    padding-left: 1.7rem !important;
+    color: gray;
+}
+.navbar-redirect-link li{
+    padding: 0.3rem 0;
+}
+.navbar-toggler-button:focus{
+    box-shadow: none;
+}
+.selected-button{
+    color: blue !important;
+    font-weight: 600;
+}
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+}
+
+.page-not-found h1 {
+    font-size: 5rem; /* Large font size for the error code */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+.page-not-found p {
+    font-size: 1.25rem; /* Slightly larger font for the messages */
+}
+.signup-option-header{
+    font-size: 2.2rem;
+    font-weight: 600;
+}

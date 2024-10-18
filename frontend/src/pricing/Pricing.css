@@ -1,0 +1,39 @@
+.pricing-header h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+
+.pricing-header p {
+    font-size: 1.2rem;
+    color: rgb(184, 184, 184);
+}
+
+table {
+    border-radius: 0.5rem !important;
+}
+
+table td,
+table thead th {
+    padding: 0.5rem;
+}
+
+.pricing-section-link p {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(12, 12, 241, 0.694);
+    cursor: pointer;
+}
+
+.selected-section {
+    border-bottom: 3px solid rgba(254, 102, 0, 0.84);
+    cursor: pointer;
+}
+
+.selected-section {
+    color: rgb(254, 89, 0) !important;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,13 @@
+.support-input-box{
+    border: 1px solid gray;
+}
+.support-input-box{
+    height: 3rem;
+    border-radius: 0;
+}
+.support-input-box input, .support-input-box span {
+    border-radius: 0;
+}
+a{
+    text-decoration: none;
+}
