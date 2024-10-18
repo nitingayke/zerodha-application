@@ -21,6 +21,7 @@ import { ToastContainer, toast } from 'react-toastify';
 export default function HomePageComp() {
     const [isBuyModalVisible, setBuyModalVisible] = useState(false);
     const [isSellModalVisible, setSellModalVisible] = useState(false);
+
     const [selectedStock, setSelectedStock] = useState();
     const [holdings, setHoldings] = useState([]);
     const [positions, setPositions] = useState([]);
@@ -63,7 +64,7 @@ export default function HomePageComp() {
     };
 
     useEffect(() => { // axios =>  It simplifies tasks like fetching data, posting data, or interacting with APIs
-        axios.get("http://localhost:9920/allHoldings", { timeout: 10000 }).then((res) => {
+        axios.get("http://localhost:9920/allHoldings").then((res) => {
             setHoldings(res.data);
         }).catch((error) => {
             toast.error("Error fetching holdings. Please try again.");
@@ -71,7 +72,7 @@ export default function HomePageComp() {
     }, []);
 
     useEffect(() => {
-        axios.get("http://localhost:9920/allPositions", { timeout: 10000 }).then((res) => {
+        axios.get("http://localhost:9920/allPositions").then((res) => {
             setPositions(res.data);
         }).catch((error) => {
             toast.error("Error fetching positions. Please try again.");
@@ -80,7 +81,7 @@ export default function HomePageComp() {
     }, []);
 
     useEffect(() => {
-        axios.get("http://localhost:9920/auctionData", { timeout: 10000 }).then((res) => {
+        axios.get("http://localhost:9920/auctionData").then((res) => {
             setAuctions(res.data);
         }).catch((error) => {
             toast.error("Error fetching auction data. Please try again.");
@@ -89,7 +90,7 @@ export default function HomePageComp() {
     }, []);
 
     useEffect(() => {
-        axios.get("http://localhost:9920/stockdata", {timeout: 5000}).then((res) => {
+        axios.get("http://localhost:9920/stockdata").then((res) => {
             if (res.data.length > 0 && res.data[0]) {
                 setStocks(res.data);
             }
@@ -109,13 +110,13 @@ export default function HomePageComp() {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
-                theme="dark"
+                theme="colored"
             />
 
             <div className='d-flex col-12 col-lg-11 mx-auto home-box'>
                 <LeftSidebarHome showSellStockModal={showSellStockModal} showBuyStockModal={showBuyStockModal} stocks={stocks}/>
 
-                <div className='d"-flex home-sections '>
+                <div className='d"-flex home-sections'>
                     <Routes>
                         <Route path="/orders" element={<Orders showToast={showToast} />} />
                         <Route path="/holdings" element={<Holdings holdings={holdings} />} />

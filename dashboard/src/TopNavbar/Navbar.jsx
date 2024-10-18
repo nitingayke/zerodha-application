@@ -67,12 +67,11 @@ export default function Navbar({setLoginUser, user, showToast}) {
                                 </button>
                                 <ul className="dropdown-menu navbar-buttons-dropdown">
                                     <li className='border-bottom p-2'>
-                                        <p className='fs-5'>{user.username}</p>
-                                        <p className='font-small-medium text-secondary'>{user.email}</p>
+                                        <p className='fs-5'>{(user && user.username) ? user.username : "Unknown"} </p>
+                                        <p className='font-small-medium text-secondary'>{(user && user.email) ? user.email : "xyz@gmail.com"}</p>
                                     </li>
                                     <li className="px-2 py-1 text-16 border-bottom text-secondary">
-                                        <i className="fa-regular fa-user p-1"></i>My profile
-                                        <span>/ Setting</span>
+                                        <i className="fa-regular fa-user p-1"></i>My profile<span>/ Setting</span>
                                     </li>
                                     <li className='px-2 py-1 text-16 text-secondary'><i className="fa-solid fa-circle-notch p-1"></i> Console</li>
                                     <li className='px-2 py-1 text-16 border-bottom text-secondary'>

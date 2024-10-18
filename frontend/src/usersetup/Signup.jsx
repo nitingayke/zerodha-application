@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import Button from '@mui/material/Button';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import PersonIcon from '@mui/icons-material/Person';
@@ -110,13 +110,19 @@ export default function Signup() {
                         </div>
 
                         <div className='text-secondary isAgree-box py-3'>
-                            <input type="checkbox" className='me-1 custom-checkbox' onChange={handleCheckboxChange} />
-                            Do you agree
+                            <input type="checkbox" className='me-1 custom-checkbox' onChange={handleCheckboxChange} />Do you agree
                         </div>
 
                         <Button type='button' onClick={handleSubmitButton} variant="contained" className='text-bold fs-6 mb-3'>
                             Signup
                         </Button>
+
+                        <p className='col-12 text-center m-0'>
+                            <Link to={"/login"} className='fs-12 col-12 '>
+                                User have already account
+                            </Link>
+                        </p>
+
                     </form>
                 </div>
 

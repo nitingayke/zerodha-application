@@ -4,7 +4,7 @@ import "./Notification.css";
 import axios from 'axios';
 
 export default function BuyStock({ stock, hideBuyStockModal, showToast }) {
-    const [stockPrice, setStockPrice] = useState(0.0);
+    const [stockPrice, setStockPrice] = useState(0);
     const [stockQuantity, setStockQuantity] = useState(0);
 
     let handleBuyOrder = () => {
@@ -30,13 +30,13 @@ export default function BuyStock({ stock, hideBuyStockModal, showToast }) {
             </header>
             <div className='p-2'>
 
-                <div class="input-group mb-2 col-12">
-                    <input type="number" onChange={((e) => setStockQuantity(e.target.value))} value={stockQuantity} class="form-control p-2 rounded-0" placeholder="Qty" />
-                    <span class="input-group-text px-2" id="basic-addon1"><i class="fa-solid fa-layer-group text-secondary"></i></span>
+                <div className="input-group mb-2 col-12">
+                    <input type="number" onChange={((e) => setStockQuantity(e.target.value))} value={stockQuantity} className="form-control p-2 rounded-0" placeholder="Qty" />
+                    <span className="input-group-text px-2" id="basic-addon1"><i className="fa-solid fa-layer-group text-secondary"></i></span>
                 </div>
 
-                <div class="input-group mb-2">
-                    <input type="number" onChange={((e) => setStockPrice(e.target.value))} value={stockPrice} class="form-control p-2 rounded-0" placeholder="Price" />
+                <div className="input-group mb-2">
+                    <input type="number" onChange={((e) => setStockPrice(e.target.value))} value={stockPrice} className="form-control p-2 rounded-0" placeholder="Price" />
                 </div>
 
                 <div className='col-12 font-small-medium text-secondary'>

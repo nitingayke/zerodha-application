@@ -61,6 +61,7 @@ export default function WatchList({ watchList, showSellStockModal, showBuyStockM
                 <span className=''>{filterWatchList.length} / {watchList.length}</span>
             </div>
 
+          
             <section className='border-bottom watch-list-section'>
 
                 {filterWatchList.length > 0 && filterWatchList.map((data, idx) => (

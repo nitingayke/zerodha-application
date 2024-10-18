@@ -5,11 +5,11 @@ import { useCookies } from "react-cookie";
 import axios from "axios";
 
 export default function LogoutBtn({ setLoginUser, showToast }) {
-    
+
     const [loginMessage, setLoginMessage] = useState(false);
     const navigate = useNavigate();
     const [cookies, removeCookie] = useCookies([]);
- 
+
     useEffect(() => {
         const verifyCookie = async () => {
             if (!cookies.token) {
@@ -42,8 +42,8 @@ export default function LogoutBtn({ setLoginUser, showToast }) {
     };
 
     return (
-        <>
-            <button type='button' onClick={Logout} className='col-12 border-0 bg-transparent d-flex'><i className="fa-solid fa-arrow-right-from-bracket p-1 text-secondary"></i>Logout</button>
-        </>
+
+        <button type='button' onClick={Logout} className='col-12 border-0 bg-transparent d-flex'><i className="fa-solid fa-arrow-right-from-bracket p-1 text-secondary"></i>Logout</button>
+
     )
 }

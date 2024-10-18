@@ -14,8 +14,8 @@ export default function NavbarButtonsOption({ setLoginUser, loginUser, showToast
             </button>
             <ul className="dropdown-menu navbar-buttons-dropdown">
                 <li className='border-bottom p-2'>
-                    <p className='fs-5'>{loginUser.username}</p>
-                    <p className='font-small-medium text-secondary'>{loginUser.email}</p>
+                    <p className='fs-5'>{(loginUser && loginUser.username) ? loginUser.username : "Unknown" }</p>
+                    <p className='font-small-medium text-secondary'>{(loginUser && loginUser.email) ? loginUser.email : "xyz@gmail.com"}</p>
                 </li>
                 <li className='px-3 py-1 text-16 border-bottom'>
                     <Link to="/marketwatch" className='navbar-section-btn' id='dashboard-navbar-btn6'><i className="fa-regular fa-bookmark font-small pe-2"></i>Marketwatch</Link>
@@ -40,8 +40,7 @@ export default function NavbarButtonsOption({ setLoginUser, loginUser, showToast
                 </li>
 
                 <li className="px-3 py-1 py-1 text-16 border-bottom text-secondary">
-                    <i className="fa-regular fa-user font-small pe-2"></i>My profile
-                    <span>/ Setting</span>
+                    <i className="fa-regular fa-user font-small pe-2"></i>My profile <span>/ Setting</span>
                 </li>
 
                 <li className='px-2 py-1 py-1 text-16'>
