@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  overflow: hidden;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root{
+  height: 100vh;
+  width: 100%;
+}
+*{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.font-small-medium{
+  font-size: 0.8rem;
+}
+.font-small{
+  font-size: 0.75rem;
+}
+.single-line-visible{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a{
+  text-decoration: none;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.left-Navbar, .left-trades-sidebar{
+  width: 23rem;
+  height: 100%;
+}
+.btn-hover{
+  color: gray;
+}
+.btn-hover:hover{
+  color: rgba(255, 68, 0, 0.719);
+}
+.link-hover{
+  color: rgb(13 110 253);
+}
+.link-hover:hover{
+  color: rgba(255, 68, 0, 0.719);
+}
+.text-red{
+  color: red;
+}
+.text-green{
+  color: rgb(0, 159, 0);
+}
+.home-box{
+  height: 100%;
+  /* padding-top: 2.9rem !important; */
+}
+.home-sections{
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  padding: 2.9rem 0 0 24rem !important;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.bg-white{
+  background-color: white !important;
+}
+.text-16{
+  font-size: 16px !important;
+}
+.section-link{
+  color: gray;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.8s ease, color 0.3s ease;
+}
+.section-link:hover{
+  color: orangered;
+  border-bottom: 3px solid orangered;
+  cursor: pointer;
+}
+.selected-link{
+  color: orangered;
+  border-bottom: 3px solid orangered;
+}
+thead{
+  z-index: 500 !important;
+}
+@media (max-width: 1150px) {
+  .left-Navbar, .left-trades-sidebar{
+      width: 21rem !important;
+  }
+  .home-sections{
+    padding-left: 22rem !important;
+  }
+}
+@media (max-width: 1130px) {
+  .left-Navbar, .left-trades-sidebar, .width-mid-none{
+      display: none !important;
+  }
+  .width-mid-visible{
+    display: block;
+  }
+  .home-sections{
+    margin-left: 0 !important ;
+    padding: 2.5rem 0 0 0 !important;
+  }
+}

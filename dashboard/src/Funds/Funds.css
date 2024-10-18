@@ -1,0 +1,14 @@
+.funds-list-data li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.1rem !important;
+}
+.funds-list-data li span:nth-of-type(odd){
+    color: gray;
+    font-size: 0.9rem;
+}
+.funds-list-data li span:nth-of-type(even){
+    color: rgb(27, 27, 27);
+    font-size: 0.9rem;
+}

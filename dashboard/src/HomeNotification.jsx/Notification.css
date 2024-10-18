@@ -1,0 +1,12 @@
+.modal-box{
+    position: absolute !important;
+    box-shadow: 0 0 5px gray;
+    border-radius: 3px;
+    background-color: white;
+    bottom: 10%;
+    margin-left: 3rem !important;
+    z-index: 5000;
+}
+.orangeRedbg{
+    background-color: orangered !important;
+}

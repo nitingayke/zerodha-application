@@ -1,0 +1,23 @@
+.order-mode-buy{
+    color: #4184f3;
+    background-color: #4185f346;
+    border-radius: 0.1rem;
+    padding: 0.1rem 0.5rem !important;
+}
+.order-mode-sell{
+    color: #df514c;
+    background-color: #df514c46;
+    border-radius: 0.1rem;
+    padding: 0.1rem 0.5rem !important;
+}
+.open-box{
+    color: #444444;
+    background-color: #44444445;
+    border-radius: 0.1rem;
+    padding: 0.1rem 0.9rem !important;
+}
+.section-order-box{
+    color: orangered;
+  border-bottom: 3px solid orangered;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.header-kite-icon{
+    width: 1.5rem;
+}
+.dashboard-navbar{
+    box-shadow: 0px 2px 10px #8080803d;
+    z-index: 1000 !important;
+    background-color: white;
+}
+.navbar-section-btn{
+    color: gray;
+}
+.navbar-section-btn:hover{
+    color: rgba(255, 68, 0, 0.525) !important;
+}
+.dashboard-section-btn{
+    color: orangered !important;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 15.3px;
+    text-underline-position: from-font;
+    text-decoration-thickness: 2px;
+}
+.navbar-buttons-dropdown{
+    border-radius: 0px;
+    inset: 0px 0px auto auto !important;
+    z-index: 1000;
+    top: 0.89rem !important
+}
+.small-window-dropdown{
+    display: none;
+}
+@media (max-width: 1130px) {
+    .small-window-dropdown{
+        display: flex;
+    }
+    .navbar-pages-section{
+        display: none !important;
+    }
+    .watch-list-section{
+        width: 100% !important;
+        padding: 1rem 0 !important;
+    }
+    .dashboard-navbar{
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,93 @@
+.left-trades-sidebar {
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    border-top: none;
+    background-color: white;
+    position: fixed;
+    z-index: 500;
+    padding-top: 3rem !important;
+}
+
+.left-trades-sidebar form{
+    z-index: 500;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+.input-group input:focus {
+    box-shadow: none;
+}
+
+.watch-list-section {
+    overflow-y: auto;
+    height: 100%;
+    top: 0;
+    padding: 0 0 2rem 0 !important;
+}
+.watch-list-section::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgba(119, 136, 153, 0.151);
+}
+.watch-list-section::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.34);
+    border-radius: 1rem;
+    width: 2rem;
+    height: 1rem;
+}
+
+.light-gray {
+    color: lightgray;
+}
+
+.max-width-15 {
+    display: inline-block;
+    width: 8rem !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+}
+.watchlist-option-buttons{
+    
+    position: absolute;
+    right: 1rem;
+    display: none;
+
+}
+.watchlist-option-buttons p{
+    font-weight: 600;
+    color: white;
+}
+.watchlist-option-buttons button{
+    background-color: white;
+    width: 2.2rem;
+    height: 1.7rem;
+    margin: 0 0.1rem !important;
+    border-radius: 0.2rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    color: gray;
+}
+.watchlist-option-buttons button:hover{
+    background-color: rgba(128, 128, 128, 0.575);
+}
+.bg-orangered{
+    background-color: orangered !important;
+}
+.watch-list-stock {
+    position: relative; 
+}
+.watch-list-stock:hover .watchlist-option-buttons{
+    display: flex;
+}
+
+#buyNewStockModel{
+    position: absolute !important;
+    z-index: 5000;
+}
+
+#buy-stock-model{
+    position: absolute;
+    z-index: 5000;
+    top: 1;
+}
