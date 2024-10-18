@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './landingpage/LandingPage';
-import Signup from './usersetup/signup';
-import Login from './usersetup/login';
-import About from './about/About';
-import Products from './products/Products';
-import Pricing from './pricing/Pricing';
-import Support from './support/Support';
-import NotFound from './shared/NotFound';
-import Footer from './shared/Footer';
-import NavBar from './shared/NavBar';
+import Signup from './usersetup/signup.jsx';
+import Login from './usersetup/login.jsx';
+import About from './about/About.jsx';
+import Products from './products/Products.jsx';
+import Pricing from './pricing/Pricing.jsx';
+import Support from './support/Support.jsx';
+import NotFound from './shared/NotFound.jsx';
+import Footer from './shared/Footer.jsx';
+import NavBar from './shared/NavBar.jsx';
 import 'react-toastify/dist/ReactToastify.css';
 
 

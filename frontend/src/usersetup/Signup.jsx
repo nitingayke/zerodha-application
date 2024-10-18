@@ -71,7 +71,6 @@ export default function Signup() {
             }
         } catch (error) {
             handleError("Signup failed. Please try again later.");
-            console.error(error);
         }
     };
 
